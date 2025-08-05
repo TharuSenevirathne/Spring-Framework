@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Authentication System</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="../12-Auth-FrontEnd/css/style.css" rel="stylesheet">
+</head>
+<body>
+<div class="auth-container">
+    <div class="auth-card" style="width: 100%; max-width: 450px;">
+        <div class="auth-header">
+            <i class="fas fa-user-plus fa-3x mb-3"></i>
+            <h2>Create Account</h2>
+            <p class="mb-0">Join us today!</p>
+        </div>
+        <div class="auth-body">
+            <form id="signUpForm">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="signUpUsername" placeholder="Username" required>
+                    <label for="signUpUsername">Username</label>
+                </div>
+                <div class="form-floating mb-4">
+                    <input type="password" class="form-control" id="signUpPassword" placeholder="Password" required>
+                    <label for="signUpPassword">Password</label>
+                </div>
+                <button type="submit" class="btn btn-gradient btn-lg w-100 mb-3">
+                    <span class="btn-text">Create Account</span>
+                    <div class="loading-spinner"></div>
+                </button>
+            </form>
+            <div class="text-center">
+                <p class="mb-0">Already have an account?
+                    <a href="signin.html" class="text-decoration-none fw-bold" style="color: #667eea;">Sign In</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Alert Container -->
+<div id="alertContainer" style="position: fixed; top: 20px; right: 20px; z-index: 9999;"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+<script src="../12-Auth-FrontEnd/js/auth.js"></script>
+<script>
+    // Initialize Sign Up page
+    document.addEventListener('DOMContentLoaded', function() {
+        // Handle Sign Up Form
+        document.getElementById('signUpForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const submitBtn = e.target.querySelector('button[type="submit"]');
+            showLoading(submitBtn, true);
+
+            const formData = {
+                username: document.getElementById('signUpUsername').value,
+                password: document.getElementById('signUpPassword').value
+            };
+
+            try {
+                const response = await simulateAjaxRequest(formData, 'signup');
+                showLoading(submitBtn, false);
+
+                if (response.success) {
+                    // Store user data and redirect to dashboard
+                    sessionStorage.setItem('currentUser', JSON.stringify(response.user));
+                    showAlert('Account created successfully! Welcome!', 'success');
+                    setTimeout(() => {
+                        window.location.href = 'dashboard.html';
+                    }, 1000);
+                }
+            } catch (error) {
+                showLoading(submitBtn, false);
+                showAlert(error.message, 'danger');
+            }
+        });
+    });
+</script>
+</body>
+</html>

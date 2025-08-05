@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/01-Spring-Core/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/01-Spring-Core/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/02-Spring-Bean-LifeCycle/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/02-Spring-Bean-LifeCycle/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/03-Spring-With-Dependency-Injection/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/03-Spring-With-Dependency-Injection/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/04-Spring-FullMode-VS-LightMode/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/04-Spring-FullMode-VS-LightMode/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/05-Spring-Configuration-Test-InClass/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/05-Spring-Configuration-Test-InClass/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/05-Spring-Configuration/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/05-Spring-Configuration/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/06-Spring-Runtime-Value-Injection/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/06-Spring-Runtime-Value-Injection/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/07-Spring-Environment/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/07-Spring-Environment/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/08-Spring-Web-MVC/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/08-Spring-Web-MVC/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/09-REST-Controllers/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/09-REST-Controllers/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/11-BackEnd/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/13-Auth-BackEnd/src/main/java" charset="UTF-8" />
+  </component>
+</project>

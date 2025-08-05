@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="08-Spring-Web-MVC" />
+        <module name="05-Spring-Configuration-Test-InClass" />
+        <module name="04-Spring-FullMode-VS-LightMode" />
+        <module name="05-Spring-Configuration" />
+        <module name="06-Spring-Runtime-Value-Injection" />
+        <module name="01-Spring-Core" />
+        <module name="07-Spring-Environment" />
+        <module name="09-REST-Controllers" />
+        <module name="03-Spring-With-Dependency-Injection" />
+        <module name="02-Spring-Bean-LifeCycle" />
+      </profile>
+      <profile name="Annotation profile for 13-Auth-BackEnd" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
+        </processorPath>
+        <module name="_11-BackEnd" />
+        <module name="_13-Auth-BackEnd" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="_11-BackEnd" options="-parameters" />
+      <module name="_13-Auth-BackEnd" options="-parameters" />
+    </option>
+  </component>
+</project>
