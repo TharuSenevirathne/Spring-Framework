@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="08-Spring-Web-MVC" />
         <module name="05-Spring-Configuration-Test-InClass" />
+        <module name="_14-Spring-Testing" />
         <module name="04-Spring-FullMode-VS-LightMode" />
         <module name="05-Spring-Configuration" />
         <module name="06-Spring-Runtime-Value-Injection" />
@@ -34,6 +35,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="_11-BackEnd" options="-parameters" />
       <module name="_13-Auth-BackEnd" options="-parameters" />
+      <module name="_14-Spring-Testing" options="-parameters" />
     </option>
   </component>
 </project>
