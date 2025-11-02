@@ -147,7 +147,3 @@ Welcome to my comprehensive Spring Framework learning repository! This project i
 - **Technologies**: JUnit, Mockito, Spring Test, TestContainers
 
 ---
-
-Happy Coding! 🚀
-
-Built with ❤️ by Tharu Senevirathne

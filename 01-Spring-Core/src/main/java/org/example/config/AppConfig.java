@@ -8,7 +8,8 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Scope;
 
 @Configuration // Spring Bean Configuration ekt adala beans tika dgnn widiha
-@ComponentScan(basePackages = "org.example.bean")  // configuration class එකට Beans scan කරන්න ඕන path එක කොහෙද කියල කියනො.
+@ComponentScan(basePackages = "org.example.bean")  // configuration class එකට Beans scan කරන්න
+// ඕන path එක කොහෙද කියල කියනො.
 public class AppConfig {
 
     @Bean("senez")

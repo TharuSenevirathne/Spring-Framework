@@ -50,7 +50,7 @@ public class JobController {
     }
 
     @PutMapping("update")
-    public ResponseEntity<APIResponse<String>>updateJob(@Valid @RequestBody JobDTO jobDTO) {
+    public ResponseEntity<APIResponse<String>>upateJob(@Valid @RequestBody JobDTO jobDTO) {
         jobService.updateJob(jobDTO);
         return ResponseEntity.ok(new APIResponse<>(
                 200,
